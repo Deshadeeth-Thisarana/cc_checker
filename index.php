@@ -18,12 +18,6 @@ $username = $update["message"]["from"]["username"];
 $message = $update["message"]["text"];
 $message_id = $update["message"]["message_id"];
 
-//////////=========[Start Command]=========//////////
-
-if ((strpos($message, "!start") === 0)||(strpos($message, "/start") === 0)){
-sendMessage($chatId, "<b>Hello there!!%0AType /cmds to know all my commands!!%0A%0ABot Made by Mr.Acid @cxvom</b>");
-}
-
 //////////=========[Cmds Command]=========//////////
 
 elseif ((strpos($message, "!cmds") === 0)||(strpos($message, "/cmds") === 0)){
